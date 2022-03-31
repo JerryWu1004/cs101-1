@@ -8,9 +8,8 @@ int my_strlen(char* s) {
 
 
 int rec_strlen(char* s) {
-    int n = 0;
-    if (*s == '\0') return n++; 
-    return rec_strlen(s-1);
+    if (*s == '\0') return 0; 
+    return 1+rec_strlen(s+1);
 }
 
 int main() {
