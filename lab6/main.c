@@ -21,11 +21,8 @@ int _div(int x, int y) {
 }
 
 int _power(int x, int y) {
-    int num = x;
-    for(int i = 1; i < y; i++) {
-        num = num*x;    
-    }
-    return num;
+    if(y==1)return x;
+    return x*_power(x, y-1);
 }
 
 int main() {
