@@ -2,17 +2,20 @@
 #include <stdio.h>
 
 int setMyBit(int a, int b){
-    a = (1<<b) | a;
+    a = (1 << b) | a;
     return a;
 }
+
 int clearMyBit(int a, int b){
-    a = ( (1<<b) - 1) & a;
+    a = ( (1 << b) - 1) & a;
     return a;
 }
+
 int inverseMyBit(int a, int b){
-    a = (1<<b) ^ a;
+    a = (1 << b) ^ a;
     return a;
 }
+
 int main()
 {
     int a = 1;
